@@ -1,36 +1,36 @@
 export default function ExperiencePage() {
-  const timelineData = [
-    {
-      year: "2019",
-      title: "THE BEGINNING",
-      desc: "Started coding out of curiosity. Watched tutorials and built small projects.",
-      img: "/images/joureny4.png",
-    },
-    {
-      year: "2020",
-      title: "FIRST PROJECTS",
-      desc: "Built my first real projects. Fell in love with web development.",
-      img: "/images/joureny1.png",
-    },
-    {
-      year: "2021",
-      title: "LEVELING UP",
-      desc: "Learned advanced concepts. Contributed to open source and improved skills.",
-      img: "/images/joureny3.png",
-    },
-    {
-      year: "2022",
-      title: "FREELANCING",
-      desc: "Started freelancing and worked with amazing clients around the world.",
-      img: "/images/joureny2.png",
-    },
-    {
-      year: "2023+",
-      title: "BUILDING & GROWING",
-      desc: "Working as a full-time developer. Building products and helping users every day.",
-      img: "/images/joureny5.png",
-    },
-  ];
+ const timelineData = [
+  {
+    year: "2019",
+    title: "FOUNDATION 🧠",
+    desc: "Started with HTML, CSS, and JavaScript, building small UI projects.\nLearned core programming concepts and problem-solving basics.",
+    img: "/images/joureny4.png",
+  },
+  {
+    year: "2020",
+    title: "FIRST BUILDS 🚀",
+    desc: "Built real-world projects and explored React fundamentals.\nFocused on responsive design and component-based architecture.",
+    img: "/images/joureny1.png",
+  },
+  {
+    year: "2021",
+    title: "FULL-STACK JOURNEY ⚡",
+    desc: "Learned Node.js, Express, and MongoDB to build full-stack apps.\nImplemented authentication, APIs, and database integration.",
+    img: "/images/joureny3.png",
+  },
+  {
+    year: "2022",
+    title: "REAL-WORLD EXPERIENCE 💼",
+    desc: "Worked on freelance projects and client-based applications.\nBuilt scalable systems with modern UI/UX and backend logic.",
+    img: "/images/joureny2.png",
+  },
+  {
+    year: "2023+",
+    title: "ADVANCED & INNOVATION 🔥",
+    desc: "Developing AI tools, 3D web apps, and high-performance platforms.\nUsing Next.js, TypeScript, and modern full-stack technologies.",
+    img: "/images/joureny5.png",
+  },
+];
 
   return (
     <div className="w-full mx-auto border-[4px] border-black bg-white">

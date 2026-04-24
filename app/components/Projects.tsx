@@ -15,7 +15,6 @@ export default function ProjectsPage() {
           rotate-[-1deg] shadow-[6px_6px_0px_black]
         ">
 
-          {/* LEFT TEXT */}
           <div>
             <h2 className="manga-heading text-xl sm:text-2xl">
               MY PROJECTS
@@ -25,10 +24,9 @@ export default function ProjectsPage() {
             </p>
           </div>
 
-          {/* RIGHT SIDE */}
           <div className="flex items-center gap-3 sm:gap-4 w-full sm:w-auto justify-between sm:justify-end">
 
-            {/* SPEECH CLOUD */}
+            {/* SPEECH */}
             <div className="
               relative bg-white border-[3px] border-black 
               px-5 py-3 
@@ -39,8 +37,6 @@ export default function ProjectsPage() {
               -rotate-2
             ">
               CHECK OUT MY <br /> LATEST WORK!
-
-              {/* Tail */}
               <div className="absolute -bottom-2 right-6 w-4 h-4 bg-white border-r-[3px] border-b-[3px] border-black rotate-45"></div>
             </div>
 
@@ -48,81 +44,78 @@ export default function ProjectsPage() {
             <div className="
               w-[90px] h-[90px] sm:w-[120px] sm:h-[120px]
               rotate-[2deg] shadow-[4px_4px_0px_black]
-              overflow-hidden border-[2px] border-black bg-white
+              overflow-hidden 
             ">
-              <img
-                src="/images/ig3.jpg"
-                className="w-full h-full object-cover"
-              />
+              <img src="/images/ig3.jpg" className="w-full h-full object-cover" />
             </div>
 
           </div>
         </div>
 
-        {/* ================= PROJECT GRID ================= */}
-        <div className="
-          grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 
-          gap-4
-        ">
+        {/* ================= GRID ================= */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 
           {[
             {
-              title: "SENPAI STREAM",
+              title: "HOTEL OPS SYSTEM ",
               img: "/images/bw1.jpeg",
-              desc: "Anime streaming platform with watchlists & reviews.",
-              tech: "NEXT.JS • TAILWIND • MYSQL",
+              desc: "Full-stack hotel booking platform with real-time availability and secure checkout.",
+              tech: "NEXT.JS • TAILWIND • MONGODB • NODE.JS • EXPRESS",
+              code: "https://github.com/Arunkumar-512/Hotel-booking-mangement",
+              live: "",
             },
             {
-              title: "TASKARA",
-              img: "/images/bw8.jpg",
-              desc: "Task management app to boost your productivity.",
-              tech: "NEXT.JS • TYPESCRIPT • MONGODB",
-            },
-            {
-              title: "PIXELS ART",
-              img: "/images/bw2.jpeg",
-              desc: "AI-powered art generator for pixel artworks.",
-              tech: "REACT • NODE.JS • GEMINI API",
-            },
-            {
-              title: "DEV CONNECT",
+              title: "BAKERY'S POINT ",
               img: "/images/bw3.jpeg",
-              desc: "Developer community platform to connect & share.",
-              tech: "NEXT.JS • SOCKET.IO • MONGODB",
+              desc: "E-commerce bakery platform with product catalog, cart system, and smooth checkout.",
+              tech: "NEXT.JS • TYPESCRIPT • TAILWIND • STRIPE • FIREBASE",
+              code: "https://github.com/Arunkumar-512/bakery-point-Ecommerce",
+              live: "https://bakerys-point.netlify.app/",
             },
             {
-              title: "MANGA BLOG",
+              title: "GYM CORE SYSTEM ",
               img: "/images/bw4.jpeg",
-              desc: "Manga blog with custom CMS and archive.",
-              tech: "NEXT.JS • MDX • TAILWIND",
+              desc: "Modern fitness website with programs, trainers, and responsive UI design.",
+              tech: "REACT • TAILWIND • GSAP • FRAMER MOTION",
+              code: "https://github.com/Arunkumar-512/GymFlow-website#",
+              live: "https://gym-flow-website.vercel.app/",
             },
             {
-              title: "WEATHERIFY",
-              img: "/images/bw5.jpg",
-              desc: "Weather app with anime background themes.",
-              tech: "REACT • WEATHER API • CHARTS",
+              title: "SNAPFORGE AI  ",
+              img: "/images/bw2.jpeg",
+              desc: "AI-powered thumbnail generator for creating high-quality visuals instantly.",
+              tech: "NEXT.JS • NODE.JS • GEMINI API • CLOUDINARY",
+              code: "https://github.com/Arunkumar-512/ForgeSnap",
+              live: "https://snapforge-ai.netlify.app/",
+            },
+            {     
+              title: "GSAP Examples ",
+              img: "/images/bw7.jpg",
+              desc: "Collection of GSAP animations and scroll-based effects for web development.",
+              tech: "REACT • GSAP • TAILWIND",
+              code: "https://github.com/Arunkumar-512/Gsap-animations",
+              live: "https://github.com/Arunkumar-512/GSAP-examples",
+            },
+            {
+              title: "MACOS UI LAB ",
+              img: "/images/bw6.jpg",
+              desc: "macOS-style portfolio with window-based UI and smooth interactive experience.",
+              tech: "NEXT.JS • TAILWIND • FRAMER MOTION • CONTEXT API",
+              code: "https://github.com/Arunkumar-512/Macs-portfolio",
+              live: "",
             },
           ].map((project, i) => (
             <div
               key={i}
               className={`
-                border-[3px] border-black p-3 flex flex-col gap-2 bg-white
+                border-[3px] border-black p-3 flex flex-col gap-2 bg-white  
                 shadow-[6px_6px_0px_black]
                 ${i % 2 === 0 ? "rotate-[-1deg]" : "rotate-[1deg]"}
               `}
             >
-              {/* IMAGE PANEL */}
-              <div className="
-                h-[160px] sm:h-[170px] 
-                border-[2px] border-black overflow-hidden
-                relative
-              ">
-                <img
-                  src={project.img}
-                  className="w-full h-full object-cover"
-                />
-
-                {/* subtle overlay for manga feel */}
+              {/* IMAGE */}
+              <div className="h-[180px] border-[2px] border-black overflow-hidden relative">
+                <img src={project.img} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-white/5"></div>
               </div>
 
@@ -135,9 +128,53 @@ export default function ProjectsPage() {
                 {project.desc}
               </p>
 
-              <p className="manga-body text-[10px] mt-auto text-gray-600">
+              <p className="manga-body text-[10px] text-gray-600">
                 {project.tech}
               </p>
+
+              {/* ================= BUTTONS ================= */}
+              <div className="flex gap-2 mt-2">
+
+                {/* CODE */}
+                <a
+                  href={project.code}
+                  target="_blank"
+                  className="
+                    flex-1 flex items-center justify-center gap-1
+                    border-[2px] border-black 
+                    bg-white text-black
+                    text-[10px] py-1
+                    shadow-[3px_3px_0px_black]
+                    active:translate-x-[2px] active:translate-y-[2px] 
+                    active:shadow-none
+                  "
+                >
+                  <span>⚙️</span>
+                  CODE
+                </a>
+
+                {/* LIVE */}
+                <a
+                  href={project.live || "#"}
+                  target="_blank"
+                  className={`
+                    flex-1 flex items-center justify-center gap-1
+                    border-[2px] border-black 
+                    text-[10px] py-1
+                    shadow-[3px_3px_0px_black]
+                    active:translate-x-[2px] active:translate-y-[2px] 
+                    active:shadow-none
+                    ${project.live 
+                      ? "bg-black text-white" 
+                      : "bg-gray-300 text-gray-500 pointer-events-none"}
+                  `}
+                >
+                  <span>↗</span>
+                  LIVE
+                </a>
+
+              </div>
+
             </div>
           ))}
 

@@ -36,7 +36,7 @@ export default function AboutPage() {
           {/* ================= MAIN SPEECH ================= */}
           <div className="
             absolute 
-            bottom-6 sm:bottom-[120px] 
+            bottom-4 sm:bottom-[80px] 
             left-1/2 sm:left-8 
             -translate-x-1/2 sm:translate-x-0
             flex flex-col items-center sm:items-start 
@@ -54,9 +54,8 @@ export default function AboutPage() {
               -rotate-2
             ">
               <p className="manga-body text-[11px] leading-[1.5]">
-                Hey! I’m a passionate full-stack developer who loves
-                building beautiful and functional web experiences.
-              </p>
+  Hey! I’m a Computer Science student and self-taught developer who turned curiosity into a passion for building real-world, user-friendly apps.
+</p>
             </div>
 
             {/* SECOND BUBBLE (HIDDEN ON MOBILE) */}
@@ -69,7 +68,8 @@ export default function AboutPage() {
               max-w-[240px] rotate-2
             ">
               <p className="manga-body text-[11px] leading-[1.4] text-center">
-                When I’m not coding, I enjoy anime, gaming and drawing manga!
+                I’m constantly learning, improving my skills, and exploring
+                new technologies to grow as a developer every day.
               </p>
             </div>
 
@@ -102,7 +102,7 @@ export default function AboutPage() {
               <div key={i} className="flex flex-col items-center text-center">
 
                 <div className="
-                  w-20 h-20 border-[3px] border-black rounded-full 
+                  z-10 w-20 h-20 border-[3px] border-black rounded-full 
                   bg-white flex items-center justify-center mb-3 overflow-hidden
                   shadow-[3px_3px_0px_black]
                 ">
@@ -127,17 +127,17 @@ export default function AboutPage() {
         {[
           {
             title: "WHAT DRIVES ME",
-            text: "I love writing clean, maintainable and scalable code.",
+            text: "I enjoy solving problems through code and turning ideas into working products that people can actually use.",
             img: "/images/manga19.jpeg",
           },
           {
             title: "CREATIVE IDEAS",
-            text: "I turn ideas into interactive and engaging solutions.",
+            text: "I love combining creativity with logic to design clean, interactive, and engaging user experiences.",
             img: "/images/img1.jpg",
           },
           {
             title: "USER FIRST",
-            text: "I design with users in mind for the best experience.",
+            text: "I focus on building applications that are simple, intuitive, and designed with real users in mind.",
             img: "/images/user_first.png",
           },
         ].map((item, i) => (

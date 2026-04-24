@@ -19,7 +19,7 @@ export default function ExtraPage() {
         </div>
 
         {/* ================= MAIN GRID ================= */}
-        <div className="grid grid-cols-1 lg:grid-cols-[70%_30%] gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-[77%_23%] gap-6">
 
           {/* ================= LEFT PANELS ================= */}
           <div className="flex flex-col gap-6">
@@ -31,17 +31,17 @@ export default function ExtraPage() {
                 {
                   title: "ANIME",
                   img: "/images/manga171.png",
-                  text: "Fuel for imagination!",
+                  text: "Where dreams fight reality — and win.",
                 },
                 {
                   title: "GAMING",
                   img: "/images/manga14.jpeg",
-                  text: "Let’s level up!",
+                  text: "Every level is a new battle to win.",
                 },
                 {
                   title: "MANGA",
                   img: "/images/manga18.jpeg",
-                  text: "Sketching ideas on paper.",
+                  text: "Stories drawn in silence, louder than words.",
                 },
               ].map((item, i) => (
                 <div
@@ -86,13 +86,19 @@ export default function ExtraPage() {
                 {
                   title: "MUSIC",
                   img: "/images/manga20.jpg",
-                  text: "Lo-fi beats on repeat.",
+                  text: "Sound that moves what words can’t.",
                 },
                 {
                   title: "TRAVEL",
                   img: "/images/manga16.jpeg",
-                  text: "Exploring new places.",
+                  text: "Every road hides a new story arc",
                 },
+                {
+                  title: "SPORTS",
+                  img: "/images/extra.png",
+                  text: "The moment where limits get rewritten.",
+                },
+
               ].map((item, i) => (
                 <div
                   key={i}
@@ -127,16 +133,7 @@ export default function ExtraPage() {
               ))}
 
               {/* WIDE PANEL */}
-              <div className="
-                relative border-[3px] border-black overflow-hidden bg-white
-                shadow-[6px_6px_0px_black]
-                rotate-[1deg]
-              ">
-                <img
-                  src="/images/manga15.jpeg"
-                  className="w-full h-[180px] sm:h-[200px] object-cover"
-                />
-              </div>
+             
 
             </div>
           </div>
@@ -154,7 +151,7 @@ export default function ExtraPage() {
 
               <img
                 src="/images/manga9.jpeg"
-                className="w-full h-[380px] sm:h-[420px] object-cover border-[3px] border-black"
+                className="w-full h-[380px] sm:h-[420px] object-cover pr-[4px]"
               />
 
               {/* SPEECH CLOUD */}
@@ -163,8 +160,8 @@ export default function ExtraPage() {
                 bg-white border-[3px] border-black 
                 px-4 py-3 
                 rounded-[45%] 
-                shadow-[5px_5px_0px_black] 
-                max-w-[170px] text-center
+                shadow-[5px_5px_0px black] 
+                max-w-[180px] text-center
                 -rotate-2
               ">
 

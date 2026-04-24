@@ -36,35 +36,35 @@ export default function SkillsPage() {
           ">
 
             <img
-              src="/images/manga3.jpeg"
-              className="absolute inset-0 w-full h-full object-cover grayscale"
+              src="/images/skills1.png"
+              className="absolute inset-0 w-full h-full object-cover"
             />
 
             <div className="absolute inset-0 bg-white/10"></div>
 
             {/* TITLE */}
             <div className="
-              absolute 
-              top-4 left-1/2 -translate-x-1/2
-              sm:left-6 sm:translate-x-0
-              z-10 w-[90%] sm:w-[75%] md:w-[60%]
-            ">
-              <div className="
-                bg-white border-[3px] border-black 
-                px-6 sm:px-10 py-4 sm:py-5 
-                rounded-[55%_45%_60%_40%/45%_55%_40%_60%] 
-                shadow-[8px_8px_0px_black] 
-                -rotate-1 text-center
-              ">
-                <h2 className="manga-heading text-xl sm:text-2xl md:text-3xl">
-                  SKILLS & POWERS
-                </h2>
+  absolute 
+  bottom-4 left-1/2 -translate-x-1/2   /* ✅ MOBILE: bottom center */
+  sm:top-4 sm:bottom-auto sm:left-1/2 sm:-translate-x-1/2  /* ✅ DESKTOP: top center */
+  z-10 w-[90%] sm:w-[75%] md:w-[60%]
+">
+  <div className="
+    bg-white border-[3px] border-black 
+    px-6 sm:px-10 py-4 sm:py-5 
+    rounded-[55%_45%_60%_40%/45%_55%_40%_60%] 
+    shadow-[8px_8px_0px_black] 
+    -rotate-1 text-center
+  ">
+    <h2 className="manga-heading text-xl sm:text-2xl md:text-3xl">
+      SKILLS & POWERS
+    </h2>
 
-                <p className="manga-sub text-[10px] sm:text-xs md:text-sm mt-2">
-                  THE TOOLS I USE TO BUILD MAGIC
-                </p>
-              </div>
-            </div>
+    <p className="manga-sub text-[10px] sm:text-xs md:text-sm mt-2">
+      THE TOOLS I USE TO BUILD MAGIC
+    </p>
+  </div>
+</div>
           </div>
 
           {/* TECH SKILLS */}
@@ -87,7 +87,11 @@ export default function SkillsPage() {
                 ["MongoDB", "80%"],
                 ["JavaScript", "95%"],
                 ["Git / GitHub", "90%"],
-                ["UI / UX Design", "85%"],
+                ["UI / UX Design", "65%"],
+                ["Java", "60%"],
+                ["Python", "80%"],
+                ["PostgreSQL", "70%"],
+                ["REST APIs", "85%"],
               ].map(([skill, value], i) => (
                 <div key={i}>
 
@@ -164,17 +168,14 @@ export default function SkillsPage() {
 
           {/* LEVEL PANEL */}
           <div className="
-            lg:col-span-4 border-[3px] border-black 
+            lg:col-span-4 
             flex items-center justify-center 
             relative min-h-[180px] sm:min-h-[220px] bg-white
-            rotate-[1deg] shadow-[6px_6px_0px_black]
+            rotate-[1deg] 
           ">
 
-            <div className="absolute inset-0 bg-[radial-gradient(circle,_#000_1px,_transparent_1px)] [background-size:12px_12px] opacity-15" />
+            <img src="/images/level.png" alt="Level Up" className=" w-full h-full object-contain" />
 
-            <h2 className="manga-title text-3xl sm:text-4xl text-center relative z-10">
-              LEVEL UP!
-            </h2>
           </div>
         </div>
 

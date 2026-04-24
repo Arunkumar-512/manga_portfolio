@@ -3,6 +3,7 @@ import "./globals.css";
 import { Bangers, Comic_Neue, Inter } from "next/font/google";
 import localFont from "next/font/local";
 import Navbar from "./components/Navbar";
+import { Toaster } from "react-hot-toast";
 
 // Google Fonts
 const bangers = Bangers({
@@ -66,6 +67,15 @@ export default function RootLayout({
       {/* CONTENT AREA */}
       <div className="flex flex-col gap-8 mt-6 w-full">
         {children}
+
+        {/* 🔥 MANGA TOASTER */}
+     <Toaster
+  position="top-center"
+  toastOptions={{
+    duration: 3000,
+    className: "manga-toast", // ✅ use your global class
+  }}
+/>
       </div>
 
     </div>
