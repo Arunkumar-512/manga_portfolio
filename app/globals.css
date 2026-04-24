@@ -1,26 +1,173 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --manga-border: 3px solid #111;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* =========================
+   TYPOGRAPHY SYSTEM
+========================= */
+
+.manga-title {
+  font-family: var(--font-bangers);
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.manga-heading {
+  font-family: var(--font-anime);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.manga-sub {
+  font-family: var(--font-anime);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.manga-body {
+  font-family: var(--font-anime);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.ui-text {
+  font-family: var(--font-inter);
+}
+
+.comic-text {
+  font-family: var(--font-comic);
+}
+
+/* =========================
+   MANGA UI COMPONENTS
+========================= */
+
+@layer components {
+
+  /* Core Manga Panel */
+  .manga-panel {
+    @apply border-[3px] border-[#111] bg-white relative overflow-hidden;
+    box-shadow: 6px 6px 0px #000;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .manga-panel:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 10px 10px 0px #000;
+  }
+
+  /* Screentone */
+  .screentone {
+    background-image: radial-gradient(#111 1px, transparent 1px);
+    background-size: 5px 5px;
+    opacity: 0.15;
+  }
+
+  .screentone-strong {
+    background-image: radial-gradient(#111 1.2px, transparent 1.2px);
+    background-size: 6px 6px;
+    opacity: 0.25;
+  }
+
+  /* =========================
+     SPEECH BUBBLES
+  ========================= */
+
+  .speech-bubble {
+    @apply border-2 border-[#111] bg-white px-4 py-2 inline-block relative;
+  }
+
+  /* Default tail (bottom-left) */
+  .speech-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #111 transparent transparent transparent;
+  }
+
+  /* Tail pointing right */
+  .speech-right::after {
+    left: auto;
+    right: 20px;
+  }
+
+  /* Tail pointing up */
+  .speech-top::after {
+    top: -10px;
+    bottom: auto;
+    border-color: transparent transparent #111 transparent;
+  }
+
+  /* Thought bubble (rounded) */
+  .thought-bubble {
+    @apply speech-bubble rounded-full;
+  }
+
+  .thought-bubble::after {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #111;
+    border: none;
+    bottom: -14px;
+    left: 25px;
+  }
+
+  /* Button */
+  .manga-btn {
+    @apply manga-heading border-2 border-[#111] bg-white px-4 py-1 hover:bg-[#111] hover:text-white transition-all;
+  }
+
+  /* Panel cuts (for later upgrades) */
+  .panel-cut-left {
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+  }
+
+  .panel-cut-right {
+    clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%);
   }
 }
 
+/* =========================
+   BACKGROUND
+========================= */
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+
+  background-image: 
+    linear-gradient(#e5e5e5 1px, transparent 1px),
+    linear-gradient(90deg, #e5e5e5 1px, transparent 1px);
+
+  background-size: 30px 30px;
+}
+
+
+/* 🎴 Manga Halftone Dots */
+.halftone {
+  background-image: radial-gradient(#000 1px, transparent 1px);
+  background-size: 8px 8px;
+  opacity: 0.15;
+}
+
+/* Softer version */
+.halftone-light {
+  background-image: radial-gradient(#000 1px, transparent 1px);
+  background-size: 10px 10px;
+  opacity: 0.08;
+}
+
+/* Dense dramatic dots */
+.halftone-strong {
+  background-image: radial-gradient(#000 1.2px, transparent 1.2px);
+  background-size: 6px 6px;
+  opacity: 0.2;
 }
