@@ -45,7 +45,7 @@ REAL-WORLD APPLICATIONS`;
     else if (cmd === "location") {
       response = " HYDERABAD, INDIA";
     } 
-    else if (cmd === "clear") {
+    else if (cmd === "clear" || cmd === "cls") {
       setHistory(["SYSTEM RESET...", "TYPE 'HELP'"]);
       setInput("");
       return;

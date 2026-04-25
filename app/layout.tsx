@@ -34,7 +34,7 @@ const animeAce = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "MANGA.PORTFOLIO",
+  title: "ARUN.DEV",
   description: "A manga-inspired developer portfolio",
 };
 
