@@ -64,7 +64,7 @@ export default function Navbar() {
 
         {/* LOGO */}
         <h1 className="manga-title text-xl md:text-3xl">
-          MANGA<span className="text-gray-400">.</span>PORTFOLIO
+          ARUN<span className="text-gray-400">.</span>DEV
         </h1>
 
         {/* DESKTOP NAV */}

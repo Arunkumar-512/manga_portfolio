@@ -196,10 +196,10 @@ export default function ResumePage() {
               </h2>
 
               <ul className="manga-body text-xs space-y-1">
-                <li>🏆 Published Research Paper (Deepfake Detection)</li>
-                <li>📜 Python for Data Science – Merit Certification</li>
-                <li>🌍 GRE & Duolingo – Competitive Scores</li>
-                <li>⭐ Frontend Training – Merit Completion</li>
+                <li>Published Research Paper (Deepfake Detection)</li>
+                <li>Python for Data Science – Merit Certification</li>
+                <li>GRE & Duolingo – Competitive Scores</li>
+                <li>Frontend Training – Merit Completion</li>
               </ul>
             </div>
           </div>

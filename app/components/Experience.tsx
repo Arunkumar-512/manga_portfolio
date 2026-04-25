@@ -1,31 +1,31 @@
 export default function ExperiencePage() {
  const timelineData = [
   {
-    year: "2019",
+    year: "2022",
     title: "FOUNDATION 🧠",
     desc: "Started with HTML, CSS, and JavaScript, building small UI projects.\nLearned core programming concepts and problem-solving basics.",
     img: "/images/joureny4.png",
   },
   {
-    year: "2020",
+    year: "2023",
     title: "FIRST BUILDS 🚀",
     desc: "Built real-world projects and explored React fundamentals.\nFocused on responsive design and component-based architecture.",
     img: "/images/joureny1.png",
   },
   {
-    year: "2021",
+    year: "2024",
     title: "FULL-STACK JOURNEY ⚡",
     desc: "Learned Node.js, Express, and MongoDB to build full-stack apps.\nImplemented authentication, APIs, and database integration.",
     img: "/images/joureny3.png",
   },
   {
-    year: "2022",
+    year: "2025",
     title: "REAL-WORLD EXPERIENCE 💼",
     desc: "Worked on freelance projects and client-based applications.\nBuilt scalable systems with modern UI/UX and backend logic.",
     img: "/images/joureny2.png",
   },
   {
-    year: "2023+",
+    year: "2026+",
     title: "ADVANCED & INNOVATION 🔥",
     desc: "Developing AI tools, 3D web apps, and high-performance platforms.\nUsing Next.js, TypeScript, and modern full-stack technologies.",
     img: "/images/joureny5.png",

@@ -93,11 +93,11 @@ export default function AboutPage() {
           <div className="flex md:grid md:grid-cols-5 gap-6 md:gap-4 min-w-[600px] md:min-w-0">
 
             {[
-              { text: "Started coding", year: "2019", img: "/images/icon5.png" },
-              { text: "First project", year: "2020", img: "/images/icon1.png" },
-              { text: "Web dev", year: "2021", img: "/images/icon2.png" },
-              { text: "Freelancing", year: "2022", img: "/images/icon3.png" },
-              { text: "Full-time", year: "2025+", img: "/images/icon4.png" },
+              { text: "Started coding", year: "2022", img: "/images/icon5.png" },
+              { text: "First project", year: "2023", img: "/images/icon1.png" },
+              { text: "Web dev", year: "2024", img: "/images/icon2.png" },
+              { text: "Freelancing", year: "2025", img: "/images/icon3.png" },
+              { text: "Full-time", year: "2026+", img: "/images/icon4.png" },
             ].map((item, i) => (
               <div key={i} className="flex flex-col items-center text-center">
 
@@ -159,7 +159,7 @@ export default function AboutPage() {
 
               <img
                 src={item.img}
-                className="w-[100px] h-[140px] object-cover border-[2px] border-black"
+                className="w-[100px] h-[140px] object-cover border-[2px] border-black shadow-[3px_3px_2px_black]"
               />
 
             </div>

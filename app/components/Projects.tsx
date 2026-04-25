@@ -93,8 +93,8 @@ export default function ProjectsPage() {
               img: "/images/bw7.jpg",
               desc: "Collection of GSAP animations and scroll-based effects for web development.",
               tech: "REACT • GSAP • TAILWIND",
-              code: "https://github.com/Arunkumar-512/Gsap-animations",
-              live: "https://github.com/Arunkumar-512/GSAP-examples",
+              code: "https://github.com/Arunkumar-512/GSAP-examples",
+              live: "https://gsap-examples-two.vercel.app/",
             },
             {
               title: "MACOS UI LAB ",
